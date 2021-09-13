@@ -45,12 +45,12 @@ $(document).on("click", ".ip", () => {
     copy.textContent = t;
     copy.select();
     document.execCommand("copy");
-    $(".ip").html("<span class='extrapad'>IP copied!</span>");
+    $(".ip").html("<span class='extrapad'>IP copiado!</span>");
     setTimeout(() => {
         $(".ip").html(t);
         var copy = document.getElementById("ta");
         copy.parentNode.removeChild(copy);
-    }, 800);
+    }, 1600);
 });
 
 // This is to fetch the player count
